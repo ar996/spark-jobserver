@@ -23,7 +23,7 @@ Spark-jobserver 提供了一个 RESTful 接口来提交和管理 spark 的 jobs�
 
 ## 部署
 
-1. 拷贝 `conf/local.sh.template` 文件到 `local.sh` 。备注：如果需要编译不同版本的Spark，请修改 `SPARK_VERSION` 属性。
+1. 拷贝 `config/local.sh.template` 文件到 `local.sh` 。备注：如果需要编译不同版本的Spark，请修改 `SPARK_VERSION` 属性。
 2. 拷贝 `config/shiro.ini.template` 文件到 `shiro.ini`。备注: 仅需 `authentication = on`时执行这一步。
 3. 拷贝 `config/local.conf.template` 到 `<environment>.conf`。
 4. `bin/server_deploy.sh <environment>`，这一步将job-server以及配置文件打包，并一同推送到配置的远程服务器上。
